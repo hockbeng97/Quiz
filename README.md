@@ -17,3 +17,6 @@ The intention of using Firebase because I would like to retrieve the data by rea
   <img src="https://user-images.githubusercontent.com/77373894/150534971-7328948c-26d3-4079-ac59-dd2feeae6687.jpg" width=150 height=250>
 </p>
 
+You may watch the video at below if you wish to know more:
+1) https://youtu.be/YHn7HsFVO8M (Part 1)
+2) https://youtu.be/VTEW0pg3sqw (Part 2)
