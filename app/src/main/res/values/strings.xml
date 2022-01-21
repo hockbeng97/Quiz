@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">clicker</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="term">
+        <b>Welcome to eduPlay</b> \n\n
+
+            <b><i>(1) Basic</i></b>\n
+            <b><i>(2) Account Security</i></b>
+
+            <b><i>(3) Termination</i></b>\n
+            <p>As creator of your eduPlay account you have access and control over the eduPlay account and the devices that are used to access the Service.
+            To maintain control over the account and to prevent anyone from accessing the account,
+            you should maintain control over the devices that are used to access the Service and not reveal the password nor any payment details
+            associated with your account to anyone. You are responsible for updating and maintaining the accuracy of the information you
+            provide to us relating to your account. You are also responsible for preventing unauthorized access and use of your account
+            by any other than you. We can terminate your account or place your account on hold in order to protect you, eduPlay or our partners from
+                conducting or attempting to conduct identity theft or other fraudulent activity. \n\n </p>
+
+            <p>The eduPlay is provided to you free-of-charge. You should use the Services for non-commercial purposes only.
+                You will be charged under law if you abuse the terms and conditions.\n\n </p>\n
+            <p>The Agreements will continue to apply to you until terminated by either you or eduPlay. You may terminate the Agreements at any time.
+            The data will be deleted and will not be recovered when you terminated your account. Please be considered before proceed to terminate
+                your accounts. </p>
+    </string>
+
+    <string name="about">
+         <b>Developers</b> \n\n
+
+        My name is Che Hock Beng from Universiti Malaysia Terengganu (UMT). I am the developer of this system. I am studying the programme called
+        Bachelor Computer Science (Software Engineering). This system is my Final Year Projects before I am graduated.
+    </string>
+
+
+    <string-array name="visibility">
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+
+    <string-array name="timer">
+        <item>10 sec</item>
+        <item>30 sec</item>
+        <item>60 sec</item>
+        <item>120 sec</item>
+    </string-array>
+
+
+</resources>

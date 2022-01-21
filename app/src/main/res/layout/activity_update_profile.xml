@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfile">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fresh_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Update Profile"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:paddingBottom="10dp"
+        android:background="#FFFAF0">
+
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_email"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:background="@drawable/list_border" />
+
+
+        <EditText
+            android:id="@+id/txtusername"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_username"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:inputType="textMultiLine"
+            android:background="@drawable/list_border" />
+
+        <EditText
+            android:id="@+id/txtuni"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_uni"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:inputType="textMultiLine"
+            android:background="@drawable/list_border" />
+
+
+        <TextView
+            android:id="@+id/view_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/view_uni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtusername"
+            android:layout_marginTop="10dp"
+            android:text="School or University"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/view_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:layout_below="@+id/txtuni"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#778899"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

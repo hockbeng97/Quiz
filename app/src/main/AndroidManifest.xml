@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="application.example.clicker">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EditClassroom"></activity>
+        <activity android:name=".CheckInternet" />
+        <activity android:name=".ViewQuiz1" />
+        <activity android:name=".SearchQuiz" />
+        <activity android:name=".IndividualHomeworkReport" />
+        <activity android:name=".IndividualReport" />
+        <activity android:name=".HomeworkReportDetail" />
+        <activity android:name=".HomeworkReport" />
+        <activity android:name=".HomeworkResultDetail" />
+        <activity android:name=".HomeworkResult" />
+        <activity android:name=".HomeworkData" />
+        <activity android:name=".StudentHomework" />
+        <activity android:name=".CreateHomework" />
+        <activity android:name=".JoinClassAnnouncement" />
+        <activity android:name=".EditAnnouncement" />
+        <activity android:name=".Announcement" />
+        <activity android:name=".ClassroomDetail" />
+        <activity android:name=".JoinClass" />
+        <activity android:name=".Classroom" />
+        <activity android:name=".ReportDetail" />
+        <activity android:name=".Host_ScoreBoard" />
+        <activity android:name=".Report" />
+        <activity android:name=".Scoreboard" />
+        <activity android:name=".WaitingPlayer" />
+        <activity android:name=".GameData" />
+        <activity android:name=".HostView" />
+        <activity android:name=".UpdatePassword" />
+        <activity android:name=".UpdateProfile" />
+        <activity android:name=".view_Profile" />
+        <activity android:name=".editQuiz" />
+        <activity android:name=".edit_Question" />
+        <activity android:name=".ViewQuiz" />
+        <activity android:name=".MyQuiz" />
+        <activity android:name=".CreateQuestion" />
+        <activity android:name=".Register" />
+        <activity android:name=".CreateQuiz" />
+        <activity android:name=".CreateFragment" />
+        <activity
+            android:name=".Home"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

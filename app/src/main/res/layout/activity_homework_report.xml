@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeworkReport">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/className"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:text="name"
+            android:textStyle="bold"
+            android:background="#FFCCFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/hosted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/className"
+            android:background="#CCCCFF"
+            android:textSize="15dp"
+            android:text="Hosted By : "
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/participant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Participant"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/participant"
+            android:background="#00CC00"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/announcement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Notice"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/participant"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/announcement"
+            android:background="#00CC00"
+            android:layout_toRightOf="@+id/participant"
+            android:layout_marginLeft="18dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/announcement"
+            android:text="Report"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/report"
+            android:layout_toRightOf="@+id/announcement"
+            android:layout_marginLeft="20dp"
+            android:visibility="visible"
+            android:background="#66FF66"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tab">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context=".CreateHomework">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Assign Homework"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#FFCCFF"
+        android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="#CCFFCC">
+
+        <TextView
+            android:id="@+id/worktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/txt_title"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Click to Enter a title"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/worktitle"
+            android:padding="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/choseClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="30dp"
+        android:text="Class: "
+        android:textColor="#000000"
+        android:layout_below="@+id/worktitle"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/choseClass"
+            android:layout_below="@+id/worktitle"
+            android:spinnerMode="dropdown" />
+
+
+    <TextView
+        android:id="@+id/selectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Due date: "
+        android:textColor="#000000"
+        android:layout_below="@+id/choseClass"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/clickDate"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/selectDate"
+        android:layout_below="@id/choseClass"
+        android:hint="Click to Pick a Date"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:textSize="18dp"/>
+
+
+        <TextView
+            android:id="@+id/selectTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectDate"
+            android:text="Due Time: "
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/clickTime"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/selectTime"
+            android:layout_below="@id/clickDate"
+            android:hint="Click to Pick a Time"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="18dp"/>
+
+
+    <Button
+        android:id="@+id/assign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clickTime"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Assign"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="#99CCFF"/>
+    </RelativeLayout>
+
+</RelativeLayout>
